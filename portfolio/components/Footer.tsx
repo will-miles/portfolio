@@ -1,8 +1,13 @@
+import styles from '../styles/Footer.module.css'
+
 const Footer = () => {
     return (
-        <footer>
+        <div>
+        <div className={styles.hr}></div>
+        <footer className={styles.footer}>
             Copyright 2022
         </footer>
+        </div>
     );
 }
 

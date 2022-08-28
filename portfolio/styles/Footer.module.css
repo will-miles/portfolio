@@ -1,0 +1,13 @@
+.footer {
+    color: #adb5bb67;
+    text-align: center;
+}
+
+.hr {
+    height: 2px;
+    border: 0px;
+    margin-left: 20vw;
+    margin-bottom: 10px;
+    background-color: #adb5bb67;
+    width: 60vw;
+}
