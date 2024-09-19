@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Header from './Components/Header.js';
+import Layout from './Components/Layout.js';
 import Home from './Pages/Home.js';
 import Projects from './Pages/Projects.js';
 import Contact from './Pages/Contact.js';
@@ -8,10 +8,10 @@ import NoPage from './Pages/NoPage.js';
 
 function App() {
   return (
-    <div className='App'>
+    <div class='min-h-100 font-sans'>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Header />}>
+          <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />
             <Route path='projects' element={<Projects />} />
             <Route path='contact' element={<Contact />} />
