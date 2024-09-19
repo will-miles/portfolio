@@ -3,11 +3,11 @@ import React from 'react';
 const Home = () => {
   return (
     <div>
-      <div class='justify-center max-w-xl text-9xl m-auto'>
+      <div className='justify-center max-w-xl text-9xl m-auto'>
         <h1>Will</h1>
         <h1>Miles</h1>
       </div>
-      <p class='text-center text-justify max-w-xl m-auto'>
+      <p className='text-center max-w-xl m-auto'>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
