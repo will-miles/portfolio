@@ -18,7 +18,7 @@ const makeNavLinks = () => {
 
   return NavArr.map((navItem) => (
     <Link key={navItem.text.toLowerCase()} to={navItem.path}>
-      <li className='p-2 rounded-full bg-violet-900 flex-auto m-3 hover:opacity-40'>
+      <li className='p-2 rounded-full bg-alabaster flex-auto m-3 hover:opacity-40'>
         {navItem.text}
       </li>
     </Link>
