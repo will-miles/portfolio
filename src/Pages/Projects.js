@@ -32,6 +32,10 @@ class Projects extends Component {
   makeRepoBoxes = () => {
     const { repos } = this.state;
 
+    repos.sort(function (a, b) {
+      return new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime();
+    });
+
     return repos.map((repo) => {
       return (
         <li
