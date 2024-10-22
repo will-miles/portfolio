@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
   return (
     <div>
-      <ul className='flex text-center sm:justify-center'>{makeNavLinks()}</ul>
+      <ul className='sm:flex text-center min-w-screen'>{makeNavLinks()}</ul>
     </div>
   );
 };
@@ -18,7 +18,7 @@ const makeNavLinks = () => {
 
   return NavArr.map((navItem) => (
     <Link key={navItem.text.toLowerCase()} to={navItem.path}>
-      <li className='p-2 rounded-full bg-alabaster flex-auto m-3 hover:opacity-40'>
+      <li className='pr-3 pt-1 pl-3 pb-1 rounded-full bg-alabaster m-3 hover:opacity-40'>
         {navItem.text}
       </li>
     </Link>

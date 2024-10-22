@@ -4,16 +4,19 @@ import { Outlet, Link } from 'react-router-dom';
 
 const Layout = () => {
   return (
-    <div className='min-w-screen min-h-screen bg-gradient-to-br from-violet-900 to-violet-950 text-violet-600'>
-      <div className='sm:flex'>
-        <h1 className='p-3 sm:flex-1'>
-          <Link className='bg-alabaster rounded-full p-2' to='/'>
+    <div className='min-w-screen min-h-screen bg-gradient-to-br from-violet-900 to-violet-950 text-violet-800'>
+      <div className='sm:flex border-b-2 border-alabaster'>
+        <h1 className='p-4 sm:flex-1 m-auto'>
+          <Link className='text-alabaster' to='/'>
             Will Miles - Full stack developer
           </Link>
         </h1>
         <Nav className='sm:flex-1' />
       </div>
-      <Outlet />
+      <div className='mb-auto'>
+        <Outlet />
+      </div>
+      <p className='bottom-0'>Copyright Will Miles 2024</p>
     </div>
   );
 };

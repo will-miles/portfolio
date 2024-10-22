@@ -8,7 +8,7 @@ import NoPage from './Pages/NoPage.js';
 
 function App() {
   return (
-    <div className='min-h-100 font-sans'>
+    <div className='font-monospace'>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Layout />}>
