@@ -4,7 +4,7 @@ import { SocialsButtons } from '../Components/SocialsButtons';
 const Home = () => {
   return (
     <div className='animate-appear mb-auto'>
-      <div className='rounded-3xl rounded-b-none text-alabaster p-4 justify-center max-w-xl text-9xl m-auto'>
+      <div className='rounded-3xl rounded-b-none text-alabaster p-4 justify-center max-w-xl text-8xl sm:text-9xl m-auto'>
         <h1>Will</h1>
         <div className='flex'>
           <h1>Miles</h1>
