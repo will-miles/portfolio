@@ -5,5 +5,8 @@ export const fetchAllRepos = () => {
     .get('https://api.github.com/users/will-miles/repos')
     .then(({ data }) => {
       return data;
+    })
+    .catch((error) => {
+      return { error };
     });
 };
