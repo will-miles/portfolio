@@ -11,7 +11,7 @@ const Layout = () => {
       <div className='mb-auto flex-grow'>
         <Outlet />
       </div>
-      <p className='m-auto w-full bottom-0 text-alabaster text-center'>
+      <p className='opacity-50 m-auto w-full bottom-0 text-alabaster text-center'>
         <FontAwesomeIcon icon={faCopyright} /> Will Miles 2024
       </p>
     </div>

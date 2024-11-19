@@ -40,7 +40,7 @@ class Projects extends Component {
 
   makeLoadingBoxes = () => {
     const Arr = [];
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 8; i++) {
       Arr.push(
         <li
           key={`loading box ${i}`}
@@ -79,8 +79,8 @@ class Projects extends Component {
             </p>
           </div>
           <Link to={repo.html_url} target='_blank' rel='noreferrer'>
-            <div className='transition ease-in-out delay-150 rounded-md bg-alabaster hover:bg-alabaster_hover rounded-t-none shadow-lg p-2'>
-              <p className='hover:-translate-y-1 text-center'>Go to repo</p>
+            <div className='transition ease-in-out delay-50 rounded-md bg-alabaster hover:-translate-y-1 hover:bg-alabaster_hover rounded-t-none shadow-lg p-2'>
+              <p className=' text-center'>Go to repo</p>
             </div>
           </Link>
         </li>

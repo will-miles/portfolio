@@ -11,7 +11,7 @@ const Contact = () => {
             willmiles@live.co.uk
           </p>
           <button
-            className='text-violet-800 pr-3 pt-1 pl-3 pb-1 rounded-full bg-alabaster hover:opacity-40 mr-auto'
+            className='transition ease-in-out delay-50 text-violet-800 pr-3 pt-1 pl-3 pb-1 rounded-full bg-alabaster hover:opacity-40 mr-auto'
             onClick={() => (window.location = 'mailto:willmiles@live.co.uk')}
           >
             <div className='hidden sm:inline'>Start an email</div>
