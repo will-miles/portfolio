@@ -29,11 +29,10 @@ class Header extends Component {
   }
 
   makeDropDown = () => {
-    console.log(this.state.dropDownLinks);
     if (this.state.dropDownLinks) {
       return (
-        <div className='sm:hidden'>
-          {makeNavLinks(this.state.path, this.newPathHandler)}
+        <div className='flex justify-center sm:hidden'>
+          {makeNavLinks(this.state.path, this.newPathHandler, 'm-auto')}
         </div>
       );
     } else {

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const makeNavLinks = (propsPath, propsHandler) => {
+const makeNavLinks = (currentPath, pathUpdateHandler) => {
   const NavArr = [
     { path: '/', text: 'Home' },
     { path: '/projects', text: 'Projects' },
@@ -8,12 +8,12 @@ const makeNavLinks = (propsPath, propsHandler) => {
   ];
 
   return NavArr.map((navItem) =>
-    propsPath === navItem.path ? (
+    currentPath === navItem.path ? (
       <Link
         onClick={() => {
-          propsHandler(navItem.path);
+          pathUpdateHandler(navItem.path);
         }}
-        className='pr-3 pt-1 pl-3 pb-1 rounded-full bg-alabaster m-3 mr-1.5 ml-1.5 opacity-70'
+        className='transition ease-in-out delay-50 min-w-15 text-center flex-1 pr-3 pt-1 pl-3 pb-1 rounded-full bg-alabaster m-3 mr-1.5 ml-1.5 opacity-70'
         key={navItem.text.toLowerCase()}
         to={navItem.path}
       >
@@ -22,9 +22,9 @@ const makeNavLinks = (propsPath, propsHandler) => {
     ) : (
       <Link
         onClick={() => {
-          propsHandler(navItem.path);
+          pathUpdateHandler(navItem.path);
         }}
-        className='pr-3 pt-1 pl-3 pb-1 rounded-full bg-alabaster m-3 mr-1.5 ml-1.5 hover:opacity-70'
+        className='transition ease-in-out delay-50 min-w-15 text-center flex-1 pr-3 pt-1 pl-3 pb-1 rounded-full bg-alabaster m-3 mr-1.5 ml-1.5 hover:opacity-70'
         key={navItem.text.toLowerCase()}
         to={navItem.path}
       >
