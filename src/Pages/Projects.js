@@ -37,8 +37,9 @@ class Projects extends Component {
           {this.contactOnMultipleErrors()}
           <div className='flex'>
             <button
-              className='bg-violet-800  rounded-full transition ease-in-out delay-50 text-alabaster hover:opacity-40 text-center p-2 m-auto'
+              className='bg-violet-800  rounded-full transition ease-in-out delay-50 text-alabaster hover:text-violet-800 hover:bg-alabaster text-center p-2 m-auto hover:border-solid border-2 border-violet-800'
               onClick={() => {
+                this.setState({ loading: true });
                 this.getAllRepos();
               }}
             >
@@ -77,7 +78,7 @@ class Projects extends Component {
               willmiles@live.co.uk
             </p>
             <button
-              className='transition ease-in-out delay-50 text-violet-800 pr-3 pt-1 pl-3 pb-1 rounded-full bg-alabaster hover:opacity-40 mr-auto'
+              className='transition ease-in-out delay-50 text-violet-800 pr-3 pt-1 pl-3 pb-1 rounded-full bg-alabaster hover:bg-violet-800 hover:text-alabaster hover:border-solid border-2 border-alabaster mr-auto'
               onClick={() =>
                 (window.location = `mailto:willmiles@live.co.uk?subject=${subject}`)
               }
@@ -131,11 +132,13 @@ class Projects extends Component {
               language: {repo.language}
             </p>
           </div>
-          <Link to={repo.html_url} target='_blank' rel='noreferrer'>
-            <div className='transition ease-in-out delay-50 rounded-md bg-alabaster hover:-translate-y-1 hover:bg-alabaster_hover rounded-t-none shadow-lg p-2'>
-              <p className='text-center'>Go to repo</p>
-            </div>
-          </Link>
+          <div className='transition ease-in-out delay-50 rounded-md bg-alabaster rounded-t-none shadow-lg p-2 pt-0'>
+            <Link to={repo.html_url} target='_blank' rel='noreferrer'>
+              <div className='rounded-b-md pt-2 pb-2 hover:bg-violet-800 hover:text-alabaster hover:shadow-inner'>
+                <p className='text-center'>Go to repo</p>
+              </div>
+            </Link>
+          </div>
         </li>
       );
     });
