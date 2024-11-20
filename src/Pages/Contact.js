@@ -6,7 +6,7 @@ const Contact = () => {
     <div className='text-center text-alabaster'>
       <h1 className='text-lg m-4'>Let's connect!</h1>
       <div className='animate-appear'>
-        <div className='flex m-auto justify-center'>
+        <div className='flex m-auto mt-8 mb-4 justify-center'>
           <p className='pr-3 pt-1 pl-3 pb-1 m-auto mr-2'>
             willmiles@live.co.uk
           </p>

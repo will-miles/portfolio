@@ -122,7 +122,7 @@ class Projects extends Component {
           className='flex flex-col m-4 md:min-h-64 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 shadow-lg'
         >
           <div className='flex flex-col flex-grow rounded-md bg-alabaster rounded-b-none p-2 pb-0'>
-            <h2 className='text-center text-xl'>{repo.name}</h2>
+            <h2 className='font-bold text-center text-xl'>{repo.name}</h2>
             <p className='border-t-2 flex-grow border-solid border-violet-900'>
               {repo.description
                 ? this.trimDescription(repo.description)
